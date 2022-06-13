@@ -36,9 +36,7 @@ if (!isset($_SESSION['user_id'])) {
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalLabel">提醒</h5>
                         </div>
-                        <div class="modal-body">
-                            變更失敗
-                        </div>
+                        <div class="modal-body" id="modal-text"></div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modal-submit-btn">
                                 關閉
