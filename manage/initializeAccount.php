@@ -30,23 +30,6 @@ if (!isset($_SESSION['user_id'])) {
 
         <body class="text-center">
             <!-- Modal -->
-            <div class="modal fade text-start" id="modal-success" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalLabel">提醒</h5>
-                        </div>
-                        <div class="modal-body">
-                            變更成功
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modal-submit-btn" onclick="window.location = './index.php'">
-                                關閉
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="modal fade text-start" id="modal-error" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
