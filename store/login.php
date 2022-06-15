@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (isset($_SESSION['employee_id'])) {
+if (isset($_SESSION['store_id'])) {
     header("Location: index.php");
 } else {
 

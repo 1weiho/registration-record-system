@@ -1,6 +1,6 @@
 <?php
 
-require_once "model.php";
+require_once __DIR__ . "/../model/model.php";
 
 class promoCode extends Model {
     public function getPromoCode($store_uuid) {

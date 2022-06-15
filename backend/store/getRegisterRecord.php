@@ -25,14 +25,14 @@ function hidestr($string, $start = 0, $length = 0, $re = '*') {
 }
 
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../manage/login.php");
+if (!isset($_SESSION['store_id'])) {
+    header("Location: ../../store/login.php");
 }
 
-require_once('model.php');
+require_once __DIR__ . "/../model/model.php";
 $model = new Model();
 
-$store_id = $_SESSION['user_id'];
+$store_id = $_SESSION['store_id'];
 $sql = $model->select("store_list", ['store_uuid']) . $model->where('store_id', '=', $store_id);
 $store_uuid = $model->execute($sql)[0]['store_uuid'];
 $sql = $model->select("register_record", ['parent_name', 'phone_num', 'register_time']) . $model->where('store_uuid', '=', $store_uuid);

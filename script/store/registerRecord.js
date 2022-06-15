@@ -4,7 +4,7 @@ $(() => {
 
 const getRegisterRecord = () => {
     $.ajax({
-        url: "../backend/getRegisterRecord.php",
+        url: "../backend/store/getRegisterRecord.php",
         method: "POST",
         success: (res) => {
             res.forEach((element) => {

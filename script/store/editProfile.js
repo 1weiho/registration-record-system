@@ -16,7 +16,7 @@ const getUrl = () => {
 
 const getStoreProfile = () => {
     $.ajax({
-        url: "../backend/getStoreProfile.php",
+        url: "../backend/store/getStoreProfile.php",
         method: "POST",
         success: (res) => {
             displayStoreProfile(res);

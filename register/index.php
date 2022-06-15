@@ -1,16 +1,16 @@
 <?php
 
-require_once __DIR__ . "/../backend/promoCode.php";
+require_once __DIR__ . "/../backend/register/promoCode.php";
 if (isset($_GET['id'])) {
     $store_uuid = $_GET['id'];
     $promoCode = new promoCode();
     if ($promoCode->getPromoCode($store_uuid)) {
         $promo_code = $promoCode->getPromoCode($store_uuid)[0]['promo_code'];
     } else {
-        header("Location: ../error/");
+        header("Location: error.php");
     }
 } else {
-    header("Location: ../error/");
+    header("Location: error.php");
 }
 
 ?>
@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/register/register.css">
     <link rel="shortcut icon" href="../src/image/ico.png" type="image/x-icon">
     <title>國際兒童腦科學皮紋檢測</title>
 </head>
@@ -72,7 +72,7 @@ if (isset($_GET['id'])) {
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Custom JS -->
-    <script src="../script/register.js"></script>
+    <script src="../script/register/register.js"></script>
 </body>
 
 </html>
