@@ -36,10 +36,8 @@ const changeCheck = (data) => {
             $("#input-store-name").val() == data[0]["store_name"] &&
             $("#input-store-address").val() == data[0]["store_address"]
         ) {
-            console.log("disable");
             $("#submit-btn").attr("disabled", true);
         } else {
-            console.log("enable");
             $("#submit-btn").removeAttr("disabled");
         }
     });
