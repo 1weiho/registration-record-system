@@ -26,6 +26,7 @@ const displayStore = (data) => {
         報名人數：${data["register_count"]} 人<br>
         店家地址：${data["store_address"]}<br>
         優惠碼：${data["promo_code"]}<br>
+        平均報名人數：${data["average_count"]} 人 / 每日<br>
         開始日期：${data["create_date"]}<br>
     </div>
     `;

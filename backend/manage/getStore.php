@@ -21,6 +21,9 @@ if (!$result) {
         $sql = "SELECT COUNT(*) FROM register_record WHERE store_uuid = '{$result[$i]['store_uuid']}';";
         $register_count = $model->execute($sql)[0]['COUNT(*)'];
         $result[$i]['register_count'] = $register_count;
+        $daydiff = floor((abs(strtotime(date("Y-m-d")) - strtotime($result[$i]["create_date"])) / (60 * 60 * 24)));
+        $average_count = number_format(($register_count / $daydiff), 2);
+        $result[$i]['average_count'] = $average_count;
     }
 }
 
