@@ -27,7 +27,8 @@ if (isset($_POST["store_name"]) && isset($_POST["store_address"]) && isset($_POS
             $result = $model->execute($sql);
             if ($result) {
                 $hash_password = password_hash($new_password, PASSWORD_DEFAULT);
-                $sql = $model->insert(["store_id" => $store_id, "store_password" => $hash_password], "store_account");
+                $create_date = date("Y-m-d");
+                $sql = $model->insert(["store_id" => $store_id, "store_password" => $hash_password, "create_date" => $create_date], "store_account");
                 $result = $model->execute($sql);
                 if ($result) {
                     // 帳號初始成功
