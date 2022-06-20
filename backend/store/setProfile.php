@@ -19,7 +19,6 @@ if (isset($_POST["store_name"]) && isset($_POST["store_address"])) {
         if ($result) {
             header("Location: ../../store/editProfile.php?state=true");
         } else {
-            // 報名失敗
             header("Location: ../../store/editProfile.php?state=false");
         }
     }
