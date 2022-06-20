@@ -58,7 +58,7 @@ if (!isset($_SESSION['employee_ssn'])) {
             </div>
         </div>
         <h1 class="text-center" id="store-name"></h1>
-        <p class="text-center" id="store-address"></p>
+        <p class="text-center">地址：<a id="store-address"></a><br>優惠碼：<a id="promo-code"></a></p>
         <p class="text-center">目前統計報名人數：<a id="record-count"></a> 人</p>
         <table class="table table-striped table-hover">
             <thead>

@@ -18,6 +18,7 @@ const getStoreInfo = (store_id) => {
             if (res) {
                 $("#store-name").html(res[0]["store_name"]);
                 $("#store-address").html(res[0]["store_address"]);
+                $("#promo-code").html(res[0]["promo_code"]);
             } else {
                 let url = "manageStore.php";
                 window.location = url;
