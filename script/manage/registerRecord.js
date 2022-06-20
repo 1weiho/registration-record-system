@@ -48,6 +48,7 @@ const showRegisterInfo = (data) => {
         家長電話：${data["phone_num"]}<br>
         店家：${data["store_name"]}<br>
         店家地址：${data["store_address"]}<br>
+        優惠碼：${data["promo_code"]}<br>
         報名時間：${data["register_time"]}<br>
     `;
     $("#modal-text").html(html);
