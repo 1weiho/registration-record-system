@@ -7,10 +7,14 @@ const getStore = () => {
         url: "../backend/manage/getStore.php",
         method: "POST",
         success: (res) => {
-            res.forEach((element) => {
-                displayStore(element);
-            });
-            displayStoreCount(res.length);
+            if (res) {
+                res.forEach((element) => {
+                    displayStore(element);
+                });
+                displayStoreCount(res.length);
+            } else {
+                displayStoreCount(0);
+            }
         },
     });
 };
