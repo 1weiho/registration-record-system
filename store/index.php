@@ -23,7 +23,7 @@ if (!isset($_SESSION['store_id'])) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <link rel="stylesheet" href="../style/store/store.css">
         <link rel="shortcut icon" href="../src/image/ico.png" type="image/x-icon">
-        <title>店家後台系統</title>
+        <title>店家後台系統 | 主頁</title>
     </head>
 
     <body>
@@ -41,7 +41,7 @@ if (!isset($_SESSION['store_id'])) {
             </div>
         </div>
         <h3 class="text-center"><?php echo $store_name ?>，您好！</h3>
-        <p class="text-center">目前統計報名人數：<a id="record-count"></a>人</p>
+        <p class="text-center">目前統計報名人數：<a id="record-count"></a> 人</p>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
