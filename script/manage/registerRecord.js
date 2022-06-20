@@ -44,12 +44,12 @@ const displayRecordCount = (data) => {
 
 const showRegisterInfo = (data) => {
     let html = `
-        家長姓名：${data['parent_name']}<br>
-        家長電話：${data['phone_num']}<br>
-        店家：${data['store_name']}<br>
+        家長姓名：${data["parent_name"]}<br>
+        家長電話：${data["phone_num"]}<br>
+        店家：${data["store_name"]}<br>
         店家地址：${data["store_address"]}<br>
-        報名時間：${data['register_time']}<br>
-    `
+        報名時間：${data["register_time"]}<br>
+    `;
     $("#modal-text").html(html);
     $("#modal-error").modal("show");
 };

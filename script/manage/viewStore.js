@@ -16,15 +16,15 @@ const getStoreInfo = (store_id) => {
         data: { store_id: store_id },
         success: (res) => {
             if (res) {
-                $('#store-name').html(res[0]['store_name']);
-                $('#store-address').html(res[0]['store_address']);
+                $("#store-name").html(res[0]["store_name"]);
+                $("#store-address").html(res[0]["store_address"]);
             } else {
-                let url = 'manageStore.php';
+                let url = "manageStore.php";
                 window.location = url;
             }
         },
     });
-}
+};
 
 const getStoreRegister = (store_id) => {
     $.ajax({
@@ -38,7 +38,7 @@ const getStoreRegister = (store_id) => {
                 });
                 displayRecordCount(res.length);
             } else {
-                let url = 'manageStore.php';
+                let url = "manageStore.php";
                 window.location = url;
             }
         },
