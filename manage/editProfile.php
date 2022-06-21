@@ -29,7 +29,9 @@ if (!isset($_SESSION['employee_ssn'])) {
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="./index.php">主頁</a></li>
-                    <li><a class="dropdown-item" href="./editProfile.php">變更店家資訊</a></li>
+                    <li><a class="dropdown-item" href="./manageStore.php">管理店家</a></li>
+                    <li><a class="dropdown-item" href="#">我的組織 (尚未開放)</a></li>
+                    <li><a class="dropdown-item" href="./editProfile.php">變更個人資訊</a></li>
                     <li><a class="dropdown-item" href="./resetPassword.php">變更密碼</a></li>
                     <li><a class="dropdown-item" href="./logout.php">登出</a></li>
                 </ul>
