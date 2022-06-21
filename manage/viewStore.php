@@ -60,7 +60,9 @@ if (!isset($_SESSION['employee_ssn'])) {
         </div>
         <h1 class="text-center" id="store-name"></h1>
         <p class="text-center">地址：<a id="store-address"></a><br>優惠碼：<a id="promo-code"></a></p>
-        <p class="text-center">目前統計報名人數：<a id="record-count"></a> 人</p>
+        <div class="d-flex w-100 justify-content-center mb-3">
+            <div class="badge bg-primary text-wrap fw-normal py-2 px-3 lh-base">目前統計報名人數：<a id="register-count"></a> 人<br>平均報名人數：<a id="average-count"></a> 人 / 每日</div>
+        </div>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
