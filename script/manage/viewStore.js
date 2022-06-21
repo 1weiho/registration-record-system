@@ -34,10 +34,10 @@ const getStoreRegister = (store_id) => {
         data: { store_id: store_id },
         success: (res) => {
             if (res) {
-                res.forEach((element) => {
+                res["data"].forEach((element) => {
                     displayRecord(element);
                 });
-                displayRecordCount(res.length);
+                displayRecordCount(res["register_count"], res["average_count"]);
             } else {
                 let url = "manageStore.php";
                 window.location = url;
@@ -69,8 +69,9 @@ const displayRecord = (data) => {
     $("#register-table").prepend(html);
 };
 
-const displayRecordCount = (data) => {
-    $("#record-count").html(data);
+const displayRecordCount = (register_count, average_count) => {
+    $("#register-count").html(register_count);
+    $("#average-count").html(average_count);
 };
 
 const showRegisterInfo = (data) => {
